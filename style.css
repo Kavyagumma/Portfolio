@@ -1,0 +1,124 @@
+.flexcontainer{
+			width: 96%;
+			margin: 1%;
+			padding: 1%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			border: 1px solid black;
+			box-shadow: 4px 4px 4px 4px grey;
+			background-color: beige;
+		}
+		.a{
+			width: 20%;
+		}
+		.a img{
+			width: 100%;
+			height: 120px;
+			text-align: left;
+		}
+		.txt{
+			width: 80%;
+			text-align: right;
+			font-family: verdana;
+		}
+		.banner{
+			width: 96%;
+			margin: 1%;
+			padding: 1%;
+			display: flex;
+			flex-direction: row;
+			border: 1px solid black;
+		}
+		.bannerimage{
+			width: 100%;
+		}
+		.bannerimage img{
+			width: 100%;
+			height: 350px;
+		}
+		.parent{
+			width: 96%;
+			margin: 1%;
+			padding: 1%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			
+		}
+		.child{
+			width: 25%;
+			margin: 1%;
+			padding: 1%;
+			border: 2px solid grey;
+			border-radius: 40px;
+			background-color: palegoldenrod;
+			box-shadow: 3px 3px 3px 3px cornflowerblue;
+		}
+		.child img{
+			width: 100%;
+			height: 35%;
+			border-radius: 35px;
+		}
+		.child button{
+			border: none;
+			border-radius: 15px;
+			background-color: darkorange;
+			padding: 15px;
+			margin-left: 35%;
+			margin-bottom: 10%;
+	
+		}
+
+		/** Mobile mode **/
+		@media only screen and (min-width: 300px) and (max-width: 767px){
+			.flexcontainer{
+				flex-direction: column;
+				text-align: center;
+			}
+			.a{
+				width: 100%;
+				align-items: center;
+			}
+			.a img{
+				width: 100%;
+				text-align: center;
+			}
+			.txt{
+				text-align: center;
+				font-family: verdana;
+				padding-left: 12%;
+			}
+			.parent{
+				flex-direction: column;
+			}
+			.child{
+				width: 96%;
+				padding: 2%;
+			}
+		}
+
+		/** Tab mode **/
+		@media only screen and (min-width: 768px) and (max-width: 1023px){
+			.flexcontainer{
+				flex-direction: column;
+				text-align: center;
+			}
+			.a{
+				width: 100%;
+				align-items: center;
+			}
+			.a img{
+				width: 50%;
+				align-items: center;
+			}
+			.txt{
+				text-align: center;
+				padding-left: 12%;
+			}
+			.child{
+				width: 40%;
+			}
+		}
